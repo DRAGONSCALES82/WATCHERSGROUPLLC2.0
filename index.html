@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#101b24">
+  <meta name="description" content="The Watchers Group LLC — a private investigations website concept for Phoenix, Arizona and the Valley of the Sun, featuring 25 years of Phoenix law enforcement experience.">
+  <meta property="og:title" content="The Watchers Group LLC | Private Investigations | Phoenix, AZ">
+  <meta property="og:description" content="Observe. Verify. Report. Experience-led private investigations in the Valley of the Sun.">
+  <meta property="og:type" content="website">
+  <title>The Watchers Group LLC | Private Investigations · Phoenix, Arizona</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <style>
+    :root{--ink:#17242a;--dark:#101b24;--deep:#0a151d;--navy:#172733;--mid:#29404c;--muted:#73818a;--line:#dce5e6;--teal:#15c7c6;--teal-deep:#049996;--teal-bright:#58e1d9;--pale:#eaf6f4;--paper:#ffffff;--warm:#f5f8f8;--white:#f8fbfa;--radius:13px;--shadow:0 23px 70px rgba(9,31,43,.10)}
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:98px}
+    body{margin:0;font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;line-height:1.65;color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button{cursor:pointer}img{display:block;max-width:100%}svg{display:block}::selection{background:var(--teal-bright);color:var(--deep)}
+    :focus-visible{outline:3px solid var(--teal);outline-offset:4px}
+    .container{width:min(1210px,calc(100% - 72px));margin-inline:auto}
+    .skip-link{position:absolute;left:-900px;top:6px;z-index:200;background:white;color:var(--deep);padding:13px 19px;border-radius:5px}.skip-link:focus{left:12px}
+    .kicker{font-weight:800;text-transform:uppercase;font-size:11px;letter-spacing:.195em}
+    .icon{height:21px;width:21px;flex:none}
+    .button{border:1px solid transparent;display:inline-flex;align-items:center;justify-content:center;gap:14px;min-height:54px;padding:15px 24px;font-size:12px;font-weight:800;border-radius:7px;letter-spacing:.014em;transition:background .2s,color .2s,transform .2s,border-color .2s;white-space:nowrap}
+    .button:hover{transform:translateY(-2px)}.button .icon{width:16px;height:16px}
+    .button-teal{background:var(--teal);color:#06212b}.button-teal:hover{background:#5be6db}
+    .button-outline{color:var(--white);border-color:#5a737e;background:#ffffff05}.button-outline:hover{border-color:var(--teal);background:#1bb7b40d}
+    .button-white{background:var(--paper);color:#13222b}.button-white:hover{background:var(--pale)}
+    .microbar{background:#061219;color:#8fafb6;border-bottom:1px solid #ffffff16}
+    .microbar-inner{min-height:39px;display:flex;justify-content:space-between;gap:16px;align-items:center;font-size:9px;letter-spacing:.16em;text-transform:uppercase;font-weight:850}
+    .microbar strong{color:#bff4ed;font-weight:850}.microbar .dot{display:inline-block;width:5px;height:5px;background:var(--teal);border-radius:50%;vertical-align:middle;margin:0 10px 2px}
+    .main-header{position:relative;z-index:50;background:var(--dark);color:var(--white);border-bottom:1px solid #ffffff1b}
+    .nav-wrap{display:flex;gap:20px;align-items:center;justify-content:space-between;min-height:91px}
+    .brand{display:flex;align-items:center;gap:12px;flex:none;min-width:264px}
+    .brand-icon{width:67px;height:67px;object-fit:contain;filter:drop-shadow(0 0 15px #16d5cc1c)}
+    .brand-copy{display:flex;flex-direction:column;line-height:1.11}.brand-copy strong{font-size:18px;letter-spacing:.04em;font-weight:850}.brand-copy small{font-size:10px;margin-top:6px;letter-spacing:.285em;font-weight:800;color:var(--teal-bright)}
+    .main-nav{display:flex;align-items:center;gap:31px}.main-nav> a:not(.nav-cta){font-size:12px;font-weight:650;color:#c3d3d6;transition:color .2s;white-space:nowrap}.main-nav> a:not(.nav-cta):hover{color:#62e6dd}
+    .nav-cta{min-height:44px;display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:11px 15px;border:1px solid #3c8c8f;border-radius:6px;color:#88ece7;font-weight:800;font-size:11px;white-space:nowrap;transition:background .2s}.nav-cta:hover{background:#10c9c31b}
+    .nav-cta .icon{width:15px;height:15px}.menu-button{display:none;width:44px;height:44px;align-items:center;justify-content:center;background:transparent;border:1px solid #ffffff3e;border-radius:7px;color:white}.menu-button .icon{width:24px;height:24px}
+    .hero{position:relative;overflow:hidden;color:var(--white);background:linear-gradient(110deg,#101b24 1%,#101d26 52%,#142b35 100%)}
+    .hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 56% 82% at 80% 47%,#128b8850,transparent 66%),linear-gradient(90deg,#ffffff07 1px,transparent 1px),linear-gradient(#ffffff07 1px,transparent 1px);background-size:auto,70px 70px,70px 70px;opacity:.82;mask-image:linear-gradient(90deg,transparent 1%,#000 64%)}
+    .hero::after{content:"";position:absolute;width:620px;height:620px;right:-240px;top:53px;border:1px solid #46dbd020;border-radius:50%;box-shadow:0 0 0 84px #4ee9d50b,0 0 0 168px #46dbd008;pointer-events:none}
+    .hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.09fr .91fr;gap:54px;align-items:center;min-height:675px;padding-top:70px;padding-bottom:74px}
+    .hero-copy{max-width:640px}.hero-kicker{display:flex;align-items:center;gap:13px;color:var(--teal-bright);margin-bottom:28px}.hero-kicker::before{content:"";width:30px;height:1px;background:var(--teal);flex:none}
+    h1,h2,h3,p{overflow-wrap:break-word}
+    .hero h1{font-size:clamp(52px,5.3vw,80px);line-height:1.04;letter-spacing:-.071em;font-weight:810;margin:0 0 25px}
+    .hero h1 .accent{color:var(--teal-bright)}.hero-subtitle{max-width:525px;font-size:15px;line-height:1.95;color:#afc1c8;margin:0}
+    .hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin:34px 0 39px}
+    .hero-footnotes{display:flex;gap:39px;align-items:center;flex-wrap:wrap}.hero-footnote{border-left:2px solid #24c9c8;padding-left:16px}.hero-footnote b{display:block;font-size:15px;line-height:1.2;color:#e8faf8}.hero-footnote small{display:block;color:#98b3bb;font-weight:600;font-size:9px;letter-spacing:.12em;margin-top:5px;text-transform:uppercase}
+    .hero-visual{position:relative;display:flex;align-items:center;justify-content:center;min-height:492px;isolation:isolate}
+    .radar-shell{position:relative;width:min(500px,100%);aspect-ratio:1/1;display:grid;place-items:center;border-radius:50%;border:1px solid #6ce9e324;box-shadow:inset 0 0 0 37px #75eee904,inset 0 0 0 39px #75eee910,0 0 90px #00a7a71c;background:radial-gradient(circle at 50% 48%,#1f51513c 0%,#16303a80 42%,#09161e2e 70%);overflow:visible}
+    .radar-shell::before{content:"";position:absolute;inset:48px;border-radius:50%;border:1px dashed #75e9e63f;box-shadow:0 0 0 66px #00000000}
+    .radar-shell::after{content:"";position:absolute;inset:110px;border:1px solid #76ece72e;border-radius:50%}
+    .radar-cross{position:absolute;inset:0;background:linear-gradient(transparent calc(50% - .5px),#65eee518 50%,transparent calc(50% + .5px)),linear-gradient(90deg,transparent calc(50% - .5px),#65eee518 50%,transparent calc(50% + .5px));border-radius:50%;pointer-events:none}
+    .watchers-emblem{position:relative;z-index:2;width:83%;object-fit:contain;filter:drop-shadow(0 12px 23px #0008) drop-shadow(0 0 35px #0ee6d822)}
+    .radar-label{position:absolute;z-index:4;padding:12px 15px;border:1px solid #50e1db44;border-radius:6px;background:#112732e6;box-shadow:0 12px 27px #0003;backdrop-filter:blur(11px);font-size:9px;letter-spacing:.17em;color:#c5f9f5;text-transform:uppercase;font-weight:850;white-space:nowrap}
+    .radar-label.top{top:44px;left:-32px}.radar-label.bottom{bottom:61px;right:-26px}.radar-label::before{content:"";width:6px;height:6px;border-radius:50%;display:inline-block;background:var(--teal);margin-right:8px;box-shadow:0 0 13px var(--teal)}
+    .hero-end{border-top:1px solid #ffffff17;position:relative;z-index:1;background:#0c1921a6}.hero-end-inner{min-height:74px;display:flex;justify-content:space-between;align-items:center;gap:24px}.hero-end-label{font-size:9px;color:#75d1ce;letter-spacing:.18em;font-weight:900;text-transform:uppercase}.hero-end-copy{display:flex;align-items:center;gap:20px;font-size:10px;font-weight:800;color:#b0c6ca;letter-spacing:.11em;text-transform:uppercase}.hero-end-copy span+span::before{content:"/";margin-right:20px;color:#4ad8d2}
+    .trustband{background:#f7faf9;border-bottom:1px solid var(--line)}.trustband-grid{display:grid;grid-template-columns:repeat(3,1fr)}.trustband-item{display:flex;gap:15px;align-items:center;padding:29px 22px;border-right:1px solid #dde7e8}.trustband-item:first-child{padding-left:0}.trustband-item:last-child{border:0}.trustband-item .round{background:#dff3f0;border-radius:12px;color:#078a87;display:grid;place-items:center;flex:none;width:47px;height:47px}.trustband-item .round svg{width:22px;height:22px}.trustband-item b{font-size:12px;display:block;line-height:1.4}.trustband-item small{display:block;color:#7c8b92;font-size:11px;margin-top:3px}
+    .section{padding:102px 0}.section-top{display:flex;align-items:end;justify-content:space-between;gap:45px;margin-bottom:43px}.section-kicker{display:flex;align-items:center;gap:12px;color:#058d8e}.section-kicker::before{content:"";width:28px;height:2px;background:var(--teal-deep)}
+    h2{font-size:clamp(34px,3.5vw,51px);line-height:1.16;letter-spacing:-.053em;font-weight:780;margin:13px 0 0}.section-top p{max-width:380px;color:#718088;font-size:13px;line-height:1.9;margin:0}
+    .services{background:white}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.service-card{padding:31px;border:1px solid #e2e9e9;border-radius:10px;background:#fff;min-height:266px;position:relative;transition:transform .2s,border-color .2s,box-shadow .2s}.service-card:hover{transform:translateY(-4px);border-color:#a0d6d4;box-shadow:0 20px 45px #112b3410}.service-card::before{content:"";position:absolute;left:31px;right:31px;bottom:0;height:3px;background:var(--teal);transform:scaleX(0);transform-origin:left;transition:transform .2s}.service-card:hover::before{transform:scaleX(1)}.service-icon{height:52px;width:52px;display:grid;place-items:center;background:#eaf6f4;border-radius:10px;color:#008985;margin-bottom:28px}.service-icon .icon{height:25px;width:25px}.service-number{position:absolute;top:27px;right:29px;font-size:10px;color:#b3bfc1;font-weight:900;letter-spacing:.18em}.service-card h3{font-size:17px;letter-spacing:-.025em;margin:0 0 8px}.service-card p{font-size:12px;line-height:1.85;color:#718088;margin:0}.service-footnote{font-size:11px;color:#7c8a90;margin:24px 0 0}
+    .about{background:#eff6f5}.about-layout{display:grid;grid-template-columns:.97fr 1.03fr;gap:93px;align-items:center}.about-visual{position:relative;min-height:488px;border-radius:14px;overflow:hidden;background:linear-gradient(160deg,#1e3741,#0e1d27 65%,#102e38);box-shadow:var(--shadow)}
+    .about-visual::before{content:"";position:absolute;inset:-20%;background:radial-gradient(circle at 50% 37%,#1ccac53a,transparent 46%),repeating-linear-gradient(135deg,transparent,transparent 40px,#ffffff08 41px,#ffffff08 42px)}
+    .about-visual .sun-disc{position:absolute;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,#5ce6d577,#43d8ce22 43%,transparent 72%);top:32px;left:50%;transform:translateX(-50%)}
+    .desert-svg{position:absolute;bottom:0;width:100%;height:230px;fill:none}
+    .big-years{position:absolute;z-index:2;left:49px;top:45px}.big-years strong{font-size:164px;font-weight:820;line-height:1;letter-spacing:-.095em;color:white}.big-years span{display:block;margin-top:-4px;color:#7ff1e8;letter-spacing:.17em;font-size:10px;font-weight:900;text-transform:uppercase}
+    .small-stamp{position:absolute;z-index:3;bottom:25px;right:25px;border:1px solid #79f1eb73;background:#0d2630c9;border-radius:8px;padding:13px 15px;color:#e7fffc;font-size:9px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}
+    .about-copy h2{max-width:500px}.about-copy h2 span{color:var(--teal-deep)}.about-copy>p{color:#687b82;font-size:14px;line-height:1.95;max-width:530px;margin:23px 0 25px}.about-points{display:grid;gap:14px;margin:26px 0 29px}.about-point{display:flex;align-items:start;gap:13px;color:#31474f;font-size:13px;line-height:1.6;font-weight:650}.about-point .icon{color:#079d98;margin-top:2px;width:18px;height:18px}.about-note{border-left:3px solid #1acbc4;background:#ffffffc4;padding:16px 18px;border-radius:0 7px 7px 0;font-size:12px;line-height:1.75;color:#62747a}
+    .process{background:#0d1b24;color:#f1fbfb;position:relative;overflow:hidden}.process::after{content:"";width:560px;height:560px;position:absolute;right:-240px;top:-300px;border:1px solid #27ccc92c;border-radius:50%;box-shadow:0 0 0 100px #24c9c50b,0 0 0 200px #24c9c506}
+    .process .section-kicker{color:#65e6df}.process .section-top{position:relative;z-index:1}.process .section-top p{color:#9bb6bf}.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;border:1px solid #54717a53;background:#54717a53;position:relative;z-index:1}.process-step{padding:39px 27px 43px;background:#112530}.process-step .num{display:block;font-size:48px;line-height:1;font-weight:750;letter-spacing:-.075em;color:#26cfc5;margin-bottom:38px}.process-step h3{font-size:18px;letter-spacing:-.03em;margin:0 0 13px}.process-step p{font-size:12px;line-height:1.9;color:#a2b8c0;margin:0}
+    .coverage{background:#fff}.coverage-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px;align-items:center}.coverage-copy h2{max-width:400px}.coverage-copy p{font-size:14px;line-height:1.9;color:#708189;margin:24px 0}.coverage-cities{display:flex;flex-wrap:wrap;gap:10px;margin-top:29px}.coverage-cities span{border:1px solid #d5e3e3;border-radius:50px;background:#f7faf9;font-size:11px;color:#577078;padding:7px 12px;font-weight:700}
+    .map-panel{background:#edf7f5;border:1px solid #d6ebea;border-radius:17px;min-height:420px;position:relative;overflow:hidden;display:grid;place-items:center}.map-panel::before{content:"";position:absolute;inset:0;background-image:linear-gradient(#5a9d9930 1px,transparent 1px),linear-gradient(90deg,#5a9d9930 1px,transparent 1px);background-size:39px 39px;mask-image:radial-gradient(ellipse at center,#000,transparent 79%)}.map-panel::after{content:"";position:absolute;width:390px;height:390px;border:1px solid #53b2ae70;border-radius:50%;box-shadow:0 0 0 64px #48a9a90f,0 0 0 125px #48a9a908}
+    .map-center{position:relative;z-index:2;width:184px;height:184px;border-radius:50%;background:#112e37;box-shadow:0 22px 40px #16484c36;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:20px}.map-center .icon{color:#4fe9dc;width:27px;height:27px;margin-bottom:9px}.map-center b{color:#ecfffc;font-size:18px;letter-spacing:-.035em}.map-center small{color:#83dcda;font-size:9px;letter-spacing:.09em;font-weight:850;margin-top:4px;text-transform:uppercase}.map-point{position:absolute;z-index:3;padding:9px 12px;background:#fff;border:1px solid #d3e8e7;border-radius:6px;box-shadow:0 9px 24px #0d45421c;font-size:10px;color:#376069;font-weight:800;letter-spacing:.025em}.map-point::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--teal-deep);margin-right:7px}.mp1{top:51px;left:17%}.mp2{top:88px;right:11%}.mp3{bottom:66px;left:10%}.mp4{bottom:67px;right:10%}
+    .faq{background:#f5f8f8}.faq-layout{display:grid;grid-template-columns:.75fr 1.25fr;gap:85px}.faq p{color:#72848a;max-width:300px;font-size:13px;line-height:1.9}.faq-list details{border-bottom:1px solid #d7e1e2;padding:19px 0}.faq-list details:first-child{border-top:1px solid #d7e1e2}.faq-list summary{font-size:14px;font-weight:750;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:15px;list-style:none}.faq-list summary::-webkit-details-marker{display:none}.faq-list summary::after{content:'+';display:grid;place-items:center;color:#079e99;font-size:23px;font-weight:450;flex:none}.faq-list details[open] summary::after{content:'−'}.faq-list details p{margin:11px 0 0;max-width:680px;font-size:12px;line-height:1.95}
+    .contact{background:#12232e;color:#f3fcfc;position:relative;overflow:hidden}.contact::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 40% 65% at 1% 50%,#19c8bf1b,transparent 76%),linear-gradient(135deg,#ffffff05 1px,transparent 1px);background-size:auto,58px 58px;opacity:.7}
+    .contact-layout{position:relative;z-index:1;display:grid;grid-template-columns:.82fr 1.18fr;gap:80px;align-items:start}.contact .section-kicker{color:#6de6e0}.contact .contact-copy>p{color:#abc2c8;max-width:430px;font-size:14px;line-height:1.95;margin:23px 0 34px}.contact-flag{display:flex;gap:12px;padding:18px 0;border-top:1px solid #ffffff2c;max-width:400px;color:#b3c8cd;font-size:12px;line-height:1.8}.contact-flag .icon{color:#59e0d9;width:22px;height:22px;margin-top:3px}.contact-flag b{color:#f6fffe}
+    .contact-form{background:white;border-radius:13px;padding:39px 41px;box-shadow:0 30px 80px #06111860;color:#1b3037}.contact-form h3{font-size:23px;line-height:1.15;letter-spacing:-.04em;margin:0 0 6px}.contact-form .intro{font-size:12px;line-height:1.75;color:#7c8c93;margin:0 0 26px}.form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:17px}.field{display:flex;flex-direction:column;gap:6px}.field.wide{grid-column:1/-1}.field label{font-size:10px;font-weight:850;letter-spacing:.09em;color:#405660;text-transform:uppercase}.field input,.field select,.field textarea{color:#20353e;background:#f7faf9;width:100%;min-height:47px;border:1px solid #dce7e6;border-radius:6px;padding:10px 12px;font-size:12px;outline:0;transition:border .2s,box-shadow .2s}.field select{cursor:pointer}.field textarea{min-height:105px;resize:vertical}.field input:focus,.field textarea:focus,.field select:focus{border-color:#0cadab;box-shadow:0 0 0 3px #1ac9c01d}.contact-form .button{width:100%;margin-top:22px}.disclaimer{color:#778a91;font-size:10px;line-height:1.85;margin:14px 0 0}.form-result{display:none;background:#eaf6f3;border:1px solid #bfdfdd;color:#2b5960;border-radius:8px;padding:16px 17px;margin-top:20px;font-size:12px;line-height:1.75}.form-result.show{display:block}.form-result b{display:block;margin-bottom:5px;color:#136c6c}.form-result .copy{margin-top:10px;display:inline-flex;border:1px solid #0baaa6;background:white;padding:9px 13px;color:#087774;font-size:11px;font-weight:800;border-radius:5px}.form-result .copy:hover{background:#def6f2}.form-result .copy:focus-visible{outline-color:#0baaa6}
+    .footer{background:#09161e;color:#b1c6cd;padding:38px 0 27px}.footer-main{display:flex;justify-content:space-between;gap:40px;align-items:center;padding-bottom:32px;border-bottom:1px solid #ffffff1c}.footer .brand-icon{height:57px;width:57px}.footer .brand-copy strong{font-size:16px}.footer .brand-copy small{font-size:9px}.footer-main p{font-size:11px;line-height:1.75;max-width:340px;text-align:right;color:#94abb4}.footer-bottom{display:flex;justify-content:space-between;gap:24px;align-items:start;padding-top:20px;font-size:10px;color:#78959f;line-height:1.8}.footer-bottom .legal{max-width:780px}.footer-bottom b{color:#58ded9;font-weight:700}
+    .reveal{opacity:0;transform:translateY(15px);transition:opacity .65s ease,transform .65s ease}.reveal.is-visible{opacity:1;transform:translateY(0)}
+    @media(max-width:1110px){.main-nav{gap:19px}.brand{min-width:245px}.hero-grid{gap:28px}.hero h1{font-size:61px}.radar-label.top{left:-7px}.radar-label.bottom{right:-8px}.about-layout{gap:55px}.coverage-layout{gap:50px}.contact-layout{gap:53px}}
+    @media(max-width:925px){.container{width:min(1210px,calc(100% - 44px))}.main-nav{display:none;position:absolute;top:91px;left:0;right:0;background:#11242e;flex-direction:column;align-items:stretch;gap:0;border-top:1px solid #ffffff1e;padding:18px 25px 24px;box-shadow:0 22px 45px #0006}.main-nav.is-open{display:flex}.main-nav>a:not(.nav-cta){padding:13px 4px;border-bottom:1px solid #ffffff18;font-size:14px}.nav-cta{align-self:flex-start;margin-top:16px}.menu-button{display:flex}.hero-grid{grid-template-columns:1.08fr .92fr;gap:17px;min-height:610px}.hero h1{font-size:52px}.hero-visual{min-height:400px}.radar-label{font-size:8px}.trustband-item{padding:24px 14px}.trustband-item:first-child{padding-left:0}.about-layout,.contact-layout{gap:40px}.big-years strong{font-size:136px}.coverage-layout{gap:38px}.section{padding:80px 0}}
+    @media(max-width:700px){.container{width:calc(100% - 36px)}.microbar-inner{min-height:34px;font-size:8px}.microbar-inner .microbar-right{display:none}.nav-wrap{min-height:79px}.main-nav{top:79px}.brand{min-width:0}.brand-icon{height:58px;width:58px}.brand-copy strong{font-size:16px}.brand-copy small{font-size:8px}.hero-grid{grid-template-columns:1fr;min-height:0;padding-top:69px;padding-bottom:58px;gap:28px}.hero-kicker{margin-bottom:17px}.hero h1{font-size:clamp(48px,10.2vw,69px)}.hero-subtitle{font-size:14px}.hero-actions{margin:29px 0 32px}.hero-visual{min-height:420px;max-width:510px;width:100%;justify-self:center}.radar-shell{width:min(400px,90%)}.radar-label.top{left:-12px;top:24px}.radar-label.bottom{right:-7px;bottom:24px}.hero-end-inner{min-height:70px;flex-direction:column;justify-content:center;gap:4px}.hero-end-copy{gap:10px;font-size:9px}.hero-end-copy span+span::before{margin-right:10px}.trustband-grid{grid-template-columns:1fr}.trustband-item{padding:15px 0;border-right:0;border-bottom:1px solid #dde7e8}.trustband-item:first-child{padding:15px 0}.trustband-item:last-child{border:0}.section-top{display:block;margin-bottom:30px}.section-top p{max-width:520px;margin-top:20px}.service-grid{grid-template-columns:repeat(2,1fr)}.service-card{padding:25px;min-height:254px}.service-card::before{left:25px;right:25px}.about-layout,.coverage-layout,.faq-layout,.contact-layout{grid-template-columns:1fr;gap:35px}.about-visual{min-height:420px}.about-copy{order:-1}.big-years strong{font-size:150px}.process-grid{grid-template-columns:repeat(2,1fr)}.map-panel{min-height:390px}.faq p{max-width:100%}.contact-form{padding:34px 30px}.footer-main{flex-direction:column;align-items:flex-start;gap:16px}.footer-main p{text-align:left}.footer-bottom{flex-direction:column;gap:4px}.section{padding:72px 0}}
+    @media(max-width:460px){.microbar-inner{font-size:7px;letter-spacing:.11em}.brand-icon{width:53px;height:53px}.brand-copy strong{font-size:14px}.brand-copy small{font-size:7.4px;letter-spacing:.25em}.hero h1{font-size:clamp(43px,11.6vw,52px)}.hero-kicker{font-size:9px}.hero-actions .button{width:100%}.hero-footnotes{gap:20px}.hero-footnote b{font-size:13px}.hero-footnote small{font-size:8px}.hero-visual{min-height:335px}.radar-shell{width:min(338px,90%)}.radar-label{padding:9px 10px;font-size:7px}.hero-end-copy{font-size:7px}.service-grid,.process-grid{grid-template-columns:1fr}.service-card{min-height:0}.service-icon{margin-bottom:21px}.process-step{padding:27px}.process-step .num{margin-bottom:18px}.about-visual{min-height:370px}.big-years{left:29px;top:42px}.big-years strong{font-size:120px}.small-stamp{right:18px;bottom:18px}.map-panel{min-height:310px}.map-center{width:142px;height:142px}.map-center b{font-size:15px}.map-point{font-size:8px;padding:8px}.mp1{top:37px;left:4%}.mp2{top:70px;right:4%}.mp3{bottom:36px;left:4%}.mp4{bottom:43px;right:4%}.contact-form{padding:27px 20px}.form-grid{grid-template-columns:1fr}.field,.field.wide{grid-column:1/-1}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+  </style>
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 1v4m0 14v4M1 12h4m14 0h4"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 22 8-4V6l-8-4-8 4v12l8 4Z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 13h8M8 17h8"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13a22 22 0 0 0 18 0"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20v-2a6 6 0 0 1 12 0v2M17 5a3 3 0 0 1 0 6m4 9v-2a6 6 0 0 0-4-5.6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l4 2"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m4 12 5 5L20 6"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  </svg>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="microbar"><div class="container microbar-inner"><span>PHOENIX, AZ <span class="dot"></span> VALLEY OF THE SUN</span><span class="microbar-right">PRIVATE INVESTIGATIONS <strong>•</strong> CONCEPT PREVIEW</span></div></div>
+  <header class="main-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="The Watchers Group LLC home">
+        <img class="brand-icon" src="assets/watchers-mark.webp" alt="The Watchers Group circular teal and silver eye emblem">
+        <span class="brand-copy"><strong>THE WATCHERS</strong><small>GROUP LLC</small></span>
+      </a>
+      <button type="button" class="menu-button" id="menuButton" aria-label="Open menu" aria-controls="mainNav" aria-expanded="false"><svg class="icon" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><use href="#i-menu"/></svg></button>
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <a href="#services">Services</a><a href="#about">About Us</a><a href="#process">Our Approach</a><a href="#coverage">Service Area</a><a href="#faq">FAQ</a>
+        <a href="#contact" class="nav-cta">Request a Consultation <svg class="icon" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><use href="#i-arrow"/></svg></a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="heroTitle">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="kicker hero-kicker">PRIVATE INVESTIGATIONS · PHOENIX, ARIZONA</div>
+          <h1 id="heroTitle">The details make <span class="accent">all the difference.</span></h1>
+          <p class="hero-subtitle">When questions remain, experience brings clarity. The Watchers Group LLC is a private-investigations concept shaped by 25 years of Phoenix law enforcement experience, professional judgment, and a commitment to the facts.</p>
+          <div class="hero-actions">
+            <a class="button button-teal" href="#contact">Request a Consultation <svg class="icon" fill="none" stroke="currentColor" stroke-width="2"><use href="#i-arrow"/></svg></a>
+            <a class="button button-outline" href="#services">Explore Services</a>
+          </div>
+          <div class="hero-footnotes">
+            <div class="hero-footnote"><b>25 years</b><small>Law enforcement background</small></div>
+            <div class="hero-footnote"><b>Phoenix, AZ</b><small>Valley of the Sun</small></div>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="The Watchers Group eye logo displayed over a teal investigation target motif">
+          <div class="radar-shell">
+            <div class="radar-cross"></div>
+            <img class="watchers-emblem" src="assets/watchers-mark.webp" alt="The Watchers Group logo emblem" fetchpriority="high">
+            <span class="radar-label top">DETAILS MATTER</span>
+            <span class="radar-label bottom">OBSERVE · VERIFY</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-end"><div class="container hero-end-inner"><span class="hero-end-label">THE WATCHERS GROUP LLC</span><div class="hero-end-copy"><span>OBSERVE</span><span>VERIFY</span><span>REPORT</span></div></div></div>
+    </section>
+    <div class="trustband"><div class="container trustband-grid">
+      <div class="trustband-item"><span class="round"><svg class="icon" fill="none" stroke="currentColor" stroke-width="1.7"><use href="#i-shield"/></svg></span><div><b>Discretion-First Mindset</b><small>Respectful, case-by-case attention</small></div></div>
+      <div class="trustband-item"><span class="round"><svg class="icon" fill="none" stroke="currentColor" stroke-width="1.7"><use href="#i-eye"/></svg></span><div><b>Experience-Led Perspective</b><small>25 years in Phoenix law enforcement</small></div></div>
+      <div class="trustband-item"><span class="round"><svg class="icon" fill="none" stroke="currentColor" stroke-width="1.7"><use href="#i-file"/></svg></span><div><b>Evidence-Focused Approach</b><small>Clear observations, factual reporting</small></div></div>
+    </div></div>
+    <section class="section services" id="services" aria-labelledby="servicesTitle">
+      <div class="container">
+        <div class="section-top reveal"><div><span class="kicker section-kicker">HOW WE CAN HELP</span><h2 id="servicesTitle">Investigative services.<br>Thoughtfully approached.</h2></div><p>From personal concerns to professional matters, every situation deserves an objective, carefully considered approach.</p></div>
+        <div class="service-grid">
+          <article class="service-card reveal"><span class="service-number">01</span><span class="service-icon"><svg class="icon" fill="none" stroke="currentColor" stroke-width="1.7"><use href="#i-eye"/></svg></span><h3>Surveillance</h3><p>Lawful observation and documentation tailored to the nature of an investigation.</p></article>
+          <article class="service-card reveal"><span class="service-number">02</span><span class="service-icon"><svg class="icon" fill="none" stroke="currentColor" stroke-width="1.7"><use href="#i-search"/></svg></span><h3>Background Research</h3><p>Relevant public-record and open-source research, subject to lawful access and permissible use.</p></article>
+          <article class="service-card reveal"><span class="service-number">03</span><span class="service-icon"><svg class="icon" fill="none" stroke="currentColor" stroke-width="1.7"><use href="#i-briefcase"/></svg></span><h3>Civil &amp; Legal Support</h3><p>Fact development, document review, and investigative assistance for legal matters.</p></article>
+          <article class="service-card reveal"><span class="service-number">04</span><span class="service-icon"><svg class="icon" fill="none" stroke="currentColor" stroke-width="1.7"><use href="#i-users"/></svg></span><h3>Witness &amp; Information Leads</h3><p>Locating potential information sources and conducting appropriate interviews when authorized.</p></article>
+          <article class="service-card reveal"><span class="service-number">05</span><span class="service-icon"><svg class="icon" fill="none" stroke="currentColor" stroke-width="1.7"><use href="#i-target"/></svg></span><h3>Personal Investigations</h3><p>Case-specific support for individuals seeking greater clarity about sensitive circumstances.</p></article>
+          <article class="service-card reveal"><span class="service-number">06</span><span class="service-icon"><svg class="icon" fill="none" stroke="currentColor" stroke-width="1.7"><use href="#i-file"/></svg></span><h3>Case Assessment</h3><p>An initial discussion to understand objectives, practical options, and next steps.</p></article>
+        </div>
+        <p class="service-footnote">* These service categories are proposed for this website concept. Confirm actual offerings and all licensing requirements with the business owner before publication.</p>
+      </div>
+    </section>
+    <section class="section about" id="about" aria-labelledby="aboutTitle">
+      <div class="container about-layout">
+        <div class="about-visual reveal" aria-label="Illustrated Arizona desert landscape recognizing 25 years of experience">
+          <div class="sun-disc"></div>
+          <div class="big-years"><strong>25</strong><span>Years in law enforcement</span></div>
+          <svg class="desert-svg" viewBox="0 0 540 230" preserveAspectRatio="none" aria-hidden="true"><path d="M0 178 55 147 97 155 142 111 176 135 232 77 265 114 290 92 348 154 395 110 445 156 492 138 540 173V230H0Z" fill="#285660"/><path d="M0 191 67 181 141 152 208 177 281 145 332 174 407 146 477 180 540 167V230H0Z" fill="#163944"/><path d="M0 211 92 194 184 202 266 190 350 206 445 185 540 201V230H0Z" fill="#0d2732"/><path d="M452 192v-65m-19 32h19m-21-20q5 0 5 7v14m16-13h15m-3-13q0 11-12 13" stroke="#276f71" stroke-width="7" stroke-linecap="round" fill="none"/></svg>
+          <span class="small-stamp">PHOENIX · ARIZONA</span>
+        </div>
+        <div class="about-copy reveal">
+          <span class="kicker section-kicker">ABOUT THE WATCHERS GROUP</span>
+          <h2 id="aboutTitle">Built on experience.<br><span>Driven by the facts.</span></h2>
+          <p>The foundation of The Watchers Group LLC is a retired Phoenix police officer with 25 years of law enforcement experience. That background brings a seasoned perspective to evaluating information, understanding circumstances, and pursuing answers responsibly.</p>
+          <div class="about-points">
+            <div class="about-point"><svg class="icon" fill="none" stroke="currentColor" stroke-width="2"><use href="#i-check"/></svg>25 years of real-world law enforcement experience</div>
+            <div class="about-point"><svg class="icon" fill="none" stroke="currentColor" stroke-width="2"><use href="#i-check"/></svg>Familiarity with the Phoenix metropolitan area</div>
+            <div class="about-point"><svg class="icon" fill="none" stroke="currentColor" stroke-width="2"><use href="#i-check"/></svg>Methodical observation and objective documentation</div>
+            <div class="about-point"><svg class="icon" fill="none" stroke="currentColor" stroke-width="2"><use href="#i-check"/></svg>Personalized attention to the circumstances of each case</div>
+          </div>
+          <div class="about-note">This concept references a retired Phoenix police officer. It does not imply endorsement or affiliation with the Phoenix Police Department or any government agency.</div>
+        </div>
+      </div>
+    </section>
+    <section class="section process" id="process" aria-labelledby="processTitle">
+      <div class="container">
+        <div class="section-top reveal"><div><span class="kicker section-kicker">A CLEAR PROCESS</span><h2 id="processTitle">A methodical way forward.</h2></div><p>Good investigative work starts with the right questions and stays focused on relevant, verifiable facts.</p></div>
+        <div class="process-grid">
+          <article class="process-step reveal"><span class="num">01</span><h3>Listen</h3><p>Understand your concern, your objectives, and the information already available.</p></article>
+          <article class="process-step reveal"><span class="num">02</span><h3>Plan</h3><p>Consider lawful investigative options, priorities, and a case-specific scope.</p></article>
+          <article class="process-step reveal"><span class="num">03</span><h3>Investigate</h3><p>Gather and document relevant information using appropriate methods.</p></article>
+          <article class="process-step reveal"><span class="num">04</span><h3>Report</h3><p>Present findings clearly, without overstating what the available evidence shows.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="section coverage" id="coverage" aria-labelledby="coverageTitle">
+      <div class="container coverage-layout">
+        <div class="coverage-copy reveal">
+          <span class="kicker section-kicker">LOCAL TO THE VALLEY</span>
+          <h2 id="coverageTitle">Phoenix roots.<br>Valley-wide perspective.</h2>
+          <p>Based on the business concept provided, The Watchers Group LLC would focus on Phoenix and the surrounding Valley of the Sun. Specific assignments and geographic availability would be confirmed during an initial discussion.</p>
+          <div class="coverage-cities"><span>Phoenix</span><span>Glendale</span><span>Peoria</span><span>Scottsdale</span><span>Tempe</span><span>Mesa</span><span>Chandler</span><span>Surprise</span></div>
+        </div>
+        <div class="map-panel reveal" aria-label="Illustrative Valley of the Sun coverage graphic, not a geographical map">
+          <span class="map-point mp1">PEORIA</span><span class="map-point mp2">SCOTTSDALE</span><span class="map-point mp3">GLENDALE</span><span class="map-point mp4">TEMPE / MESA</span>
+          <div class="map-center"><svg class="icon" fill="none" stroke="currentColor" stroke-width="1.7"><use href="#i-pin"/></svg><b>PHOENIX</b><small>VALLEY OF THE SUN</small></div>
+        </div>
+      </div>
+    </section>
+    <section class="section faq" id="faq" aria-labelledby="faqTitle">
+      <div class="container faq-layout">
+        <div class="reveal"><span class="kicker section-kicker">GOOD TO KNOW</span><h2 id="faqTitle">Frequently asked questions.</h2><p>Answers to common questions about discussing a potential investigation.</p></div>
+        <div class="faq-list reveal">
+          <details><summary>How do I know if my situation is a fit?</summary><p>Start with a brief initial conversation about what you need to learn. The investigator can explain whether your request is within the services actually offered and what lawful options may be available.</p></details>
+          <details><summary>Do I need to have evidence before getting started?</summary><p>Not necessarily. A clear explanation of the concern and any facts you already know may be enough for an initial case assessment. Avoid sending highly sensitive personal information through an unverified website contact form.</p></details>
+          <details><summary>How much do private investigation services cost?</summary><p>Costs depend on the type of assignment, scope, research required, and time involved. Actual pricing, retainers, and payment policies should be confirmed directly with the business owner.</p></details>
+          <details><summary>What areas can you serve?</summary><p>The website concept focuses on Phoenix and neighboring Valley communities. The actual service area should be verified with the owner, including whether any particular case can be accepted.</p></details>
+        </div>
+      </div>
+    </section>
+    <section class="section contact" id="contact" aria-labelledby="contactTitle">
+      <div class="container contact-layout">
+        <div class="contact-copy reveal"><span class="kicker section-kicker">BEGIN THE CONVERSATION</span><h2 id="contactTitle">Answers start with a conversation.</h2><p>Tell us a little about the situation. This concept form prepares an inquiry you can copy, but it does not transmit or store your information online.</p>
+          <div class="contact-flag"><svg class="icon" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#i-shield"/></svg><span><b>Private, professional approach.</b> Discuss sensitive details directly with the investigator after verified contact information has been provided.</span></div>
+          <div class="contact-flag"><svg class="icon" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#i-clock"/></svg><span><b>Business contact information pending.</b> Phone, email, and Arizona agency license information will be added after confirmation.</span></div>
+        </div>
+        <form id="inquiryForm" class="contact-form reveal" novalidate>
+          <h3>Request a consultation</h3><p class="intro">Demo inquiry form · creates a copyable message · no information is sent.</p>
+          <div class="form-grid">
+            <div class="field"><label for="fullName">Your name *</label><input autocomplete="name" id="fullName" name="fullName" placeholder="Full name" maxlength="100" required></div>
+            <div class="field"><label for="email">Email *</label><input autocomplete="email" type="email" id="email" name="email" placeholder="you@example.com" maxlength="180" required></div>
+            <div class="field"><label for="phone">Phone (optional)</label><input autocomplete="tel" type="tel" id="phone" name="phone" placeholder="(000) 000-0000" maxlength="40"></div>
+            <div class="field"><label for="service">Area of interest</label><select id="service" name="service"><option value="General consultation">General consultation</option><option>Surveillance</option><option>Background research</option><option>Civil / legal support</option><option>Witness / information leads</option><option>Personal investigation</option><option>Case assessment</option></select></div>
+            <div class="field wide"><label for="summary">Brief overview *</label><textarea id="summary" name="summary" placeholder="Describe your request in general terms. Do not include SSNs, medical details, account numbers, or other sensitive personal data." maxlength="1500" required></textarea></div>
+          </div>
+          <button type="submit" class="button button-teal">Prepare Inquiry <svg class="icon" fill="none" stroke="currentColor" stroke-width="2"><use href="#i-arrow"/></svg></button>
+          <p class="disclaimer">Concept demonstration only. The form is not connected to an inbox or database. No message is sent when you click “Prepare Inquiry.”</p>
+          <div class="form-result" id="formResult" role="status" aria-live="polite"><b>Inquiry prepared — not sent.</b><span>You can copy the information below and share it directly once the business provides a verified contact method.</span><button type="button" class="copy" id="copyInquiry">Copy inquiry text</button></div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container"><div class="footer-main"><a class="brand" href="#top" aria-label="Back to the top of The Watchers Group website"><img class="brand-icon" src="assets/watchers-mark.webp" alt=""><span class="brand-copy"><strong>THE WATCHERS</strong><small>GROUP LLC</small></span></a><p>Experience. Discretion. Clarity.<br>A Phoenix, Arizona private-investigations website concept.</p></div><div class="footer-bottom"><div class="legal">© <span id="year">2026</span> The Watchers Group LLC. Concept website. <b>Arizona agency license: [Add verified license number].</b> Services, geographic coverage, credentials, and business contact information require owner confirmation before publication. No affiliation with the City of Phoenix or Phoenix Police Department is claimed.</div><span>PHOENIX · ARIZONA</span></div></div></footer>
+  <script>
+    (() => {
+      'use strict';
+      const menuButton = document.getElementById('menuButton');
+      const mainNav = document.getElementById('mainNav');
+      const closeMenu = () => { mainNav.classList.remove('is-open'); menuButton.setAttribute('aria-expanded','false'); menuButton.setAttribute('aria-label','Open menu'); };
+      menuButton.addEventListener('click', () => { const opening = !mainNav.classList.contains('is-open'); mainNav.classList.toggle('is-open', opening); menuButton.setAttribute('aria-expanded', String(opening)); menuButton.setAttribute('aria-label',opening ? 'Close menu' : 'Open menu'); });
+      mainNav.addEventListener('click', e => {if (e.target.closest('a')) closeMenu();});
+      document.addEventListener('keydown', e => { if(e.key === 'Escape') closeMenu(); });
+      window.addEventListener('resize', () => { if(window.innerWidth > 925) closeMenu(); });
+      const year = document.getElementById('year');
+      year.textContent = String(new Date().getFullYear());
+      const reveals = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        const observer = new IntersectionObserver((entries) => entries.forEach(entry => {if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); }}),{threshold:.07,rootMargin:'0px 0px 35px 0px'});
+        reveals.forEach(el => observer.observe(el));
+      } else {reveals.forEach(el => el.classList.add('is-visible'));}
+      const form = document.getElementById('inquiryForm');
+      const result = document.getElementById('formResult');
+      const copyButton = document.getElementById('copyInquiry');
+      let preparedMessage = '';
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        if (!form.reportValidity()) return;
+        const name = document.getElementById('fullName').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+        const service = document.getElementById('service').value;
+        const summary = document.getElementById('summary').value.trim();
+        if(!name || !email || !summary) {result.classList.remove('show');return;}
+        preparedMessage = `Inquiry for The Watchers Group LLC\nName: ${name}\nEmail: ${email}\nPhone: ${phone || 'Not provided'}\nArea of interest: ${service}\nOverview: ${summary}`;
+        result.classList.add('show');
+        copyButton.textContent = 'Copy inquiry text';
+        result.scrollIntoView({behavior:'smooth',block:'nearest'});
+      });
+      copyButton.addEventListener('click', async () => {
+        if (!preparedMessage) return;
+        try {
+          if(navigator.clipboard && window.isSecureContext) {await navigator.clipboard.writeText(preparedMessage);} else {
+            const temp = document.createElement('textarea'); temp.value = preparedMessage; temp.style.position='fixed';temp.style.opacity='0'; document.body.appendChild(temp); temp.select(); const success = document.execCommand('copy');temp.remove();if(!success)throw new Error('Copy unavailable');
+          }
+          copyButton.textContent = 'Copied!';
+        } catch(err) {
+          copyButton.textContent = 'Select and copy manually';
+          const textarea = document.createElement('textarea'); textarea.value=preparedMessage;textarea.setAttribute('aria-label','Prepared inquiry text');textarea.style.width='100%';textarea.style.marginTop='12px'; textarea.rows=7; result.appendChild(textarea);textarea.select();
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
